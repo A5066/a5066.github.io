@@ -1,0 +1,5797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeenbhawani Maa Dhaam</title>
+    <!-- Preload Images -->
+    <link rel="preload" href="http://127.0.0.1:5500/" as="image">
+    <link rel="preload" href="https://images.unsplash.com/photo-1611068815472-0a48b6797d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" as="image">
+    <!-- Google Fonts for Sree Krushnadevaraya and Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+    <style>
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Section Headings Animation */
+    .container h2, .section-title, .festival-section h2, .gallery-section h2 {
+    margin-top: 120px;
+    font-family: 'Sree Krushnadevaraya', serif;
+    font-size: 2.8rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+    /* Hover Effect for Section Headings */
+    .container h2:hover, .section-title:hover, .festival-section h2:hover, .gallery-section h2:hover {
+    transform: translateY(-5px) scale(1.02);
+    text-shadow: 4px 4px 8px rgba(255, 122, 0, 0.4);
+    background: linear-gradient(45deg, var(--deep-red), var(--orange), var(--deep-red));
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+    /* Underline Animation */
+    .container h2::after, .section-title::after, .festival-section h2::after, .gallery-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(45deg, var(--deep-red), var(--orange));
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .container h2:hover::after, .section-title:hover::after, 
+    .festival-section h2:hover::after, .gallery-section h2:hover::after {
+        width: 100%;
+    }
+
+    /* Letter Animation Styles */
+    .heading-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+    .container h2:hover .heading-letter, 
+    .section-title:hover .heading-letter, 
+    .festival-section h2:hover .heading-letter, 
+    .gallery-section h2:hover .heading-letter {
+        color: var(--orange);
+    }
+
+    .heading-letter:hover {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+    color: var(--deep-red) !important;
+    animation: letterPop 0.3s ease;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4) translateY(-12px); }
+    100% { transform: scale(1.2) translateY(-8px) rotate(5deg); }
+}
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header-content h1 span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Split text into individual letters for animation */
+    .header-content h1::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--cyber-blue), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(8px);
+        animation: shine 4s linear infinite;
+    }
+
+    /* Add cool animations */
+    @keyframes titleGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px var(--neon-pink))
+                   drop-shadow(0 0 20px var(--cyber-blue));
+        }
+        50% {
+            filter: drop-shadow(0 0 20px var(--electric-purple))
+                   drop-shadow(0 0 30px var(--neon-green));
+        }
+    }
+
+    @keyframes letterFloat {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Modern Subtitle Animation */
+    .header-content p {
+        font-size: 1.5rem;
+        color: var(--cyber-blue);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover Effects */
+    .header-content h1 span:hover {
+        background: linear-gradient(45deg, var(--bright-red), var(--light-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-5px) scale(1.1);
+        text-shadow: 3px 3px 6px rgba(255, 122, 0, 0.4);
+    }
+
+    @keyframes rubberBand {
+        0% { transform: scale(1); }
+        30% { transform: scaleX(1.25) scaleY(0.75); }
+        40% { transform: scaleX(0.75) scaleY(1.25); }
+        50% { transform: scaleX(1.15) scaleY(0.85); }
+        65% { transform: scaleX(0.95) scaleY(1.05); }
+        75% { transform: scaleX(1.05) scaleY(0.95); }
+        100% { transform: scale(1); }
+    }
+
+    /* Z-Pattern Layout */
+    .z-pattern-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    /* Navratri Section Styling */
+    .festival-section {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .festival-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .festival-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .festival-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255,165,0,0.3);
+    }
+
+    .image-container {
+        position: relative;
+        height: 300px;
+    }
+
+    .festival-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .festival-card:hover .festival-image {
+        transform: scale(1.05);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .image-overlay h3 {
+        margin: 0 0 0.5rem;
+        color: #ffd700;
+    }
+    
+    .highlight-card {
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-5px);
+    }
+        :root {
+        /* Modern Tech Color Palette */
+        --primary-color: #2D3436;    /* Deep charcoal */
+        --secondary-color: #0984E3;  /* Electric blue */
+        --background-color: #F5F6FA; /* Light gray-blue */
+        --text-color: #2D3436;      /* Deep charcoal */
+        --accent-color: #00B894;    /* Mint green */
+        --gradient-bg: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        
+        /* Additional Colors for Depth */
+        --hover-color: #74B9FF;     /* Light blue */
+        --border-color: #DFE6E9;    /* Soft gray */
+        --card-bg: rgba(255, 255, 255, 0.9);
+    }
+
+        body {
+    background: linear-gradient(135deg, #FFF5E6, #FFE5CC);
+    margin: 0;
+    padding: 0;
+}
+
+.container, .section {
+    background: linear-gradient(to bottom, rgba(255, 253, 245, 0.95), rgba(255, 248, 225, 0.95));
+    border: 1px solid rgba(255, 153, 51, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.1);
+    border-radius: 12px;
+    margin: 20px;
+    padding: 25px;
+}
+
+    header {
+        position: relative;
+        background-image: url('./g.jpg (5).jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, 
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.2));
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+    }
+
+    .header-content h1 {
+        font-size: 4.5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content h1 span {
+        color: var(--accent-color);
+    }
+
+        @media (max-width: 600px) {
+            header {
+                height: 400px;
+            }
+            .header-content {
+                padding: 1.5rem;
+            }
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
+                      inset 0 0 30px rgba(255, 69, 0, 0.4);
+            transition: transform 0.4s ease-out, box-shadow 0.4s ease;
+            border: 4px solid var(--accent-color);
+            padding: 8px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+                      inset 0 0 40px rgba(255, 69, 0, 0.6);
+            border-color: var(--primary-color);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+
+        .video-item {
+            border-radius: 20px !important;
+            aspect-ratio: 16/9;
+        }
+
+        .gallery-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid var(--accent-color);
+        }
+
+        .video-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .video-item:hover .video-caption {
+            background: rgba(255, 69, 0, 0.8);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.15) rotate(3deg);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                padding: 1rem;
+                gap: 1.5rem;
+            }
+            .gallery-item {
+                border-width: 3px;
+                padding: 6px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Existing title animation code
+    const title = document.querySelector('.header-content h1');
+    const text = title.textContent;
+    title.innerHTML = text.split('').map((letter) => 
+        `<span>${letter}</span>`
+    ).join('');
+
+    // Heading animations
+    const headings = document.querySelectorAll('.container h2, .section-title, .festival-section h2, .gallery-section h2');
+    headings.forEach(heading => {
+        const text = heading.textContent;
+        heading.setAttribute('data-text', text);
+        heading.innerHTML = text.split('').map(letter => 
+            `<span class="heading-letter">${letter}</span>`
+        ).join('');
+    });
+
+    // Smooth scrolling and active state for navigation
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Update active state on scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.container, section');
+        let currentSection = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 60) {
+                currentSection = '#' + section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><span>J</span>een Bhawani Maa Dhaam</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#visitor-info">Visitor Info</a>
+        <a href="#location">Location</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <style>
+    nav {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        border-bottom: 2px solid rgba(255, 122, 0, 0.3);
+    }
+
+    nav a {
+        color: var(--deep-red);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background: var(--gradient-text);
+        transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--orange);
+        transform: translateY(-2px);
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.2);
+    }
+
+    nav a:hover::before {
+        width: 80%;
+    }
+
+    nav a.active {
+        color: var(--orange);
+        background: rgba(255, 30, 30, 0.1);
+    }
+    </style>
+    <div class="container" id="home">
+        <h2>Jai Jeenbhawani Maa</h2>
+        <p>Welcome to the official website of Jeenbhawani Maa Dhaam, a sacred temple dedicated to Goddess Jeenbhawani, an avatar of Goddess Durga. Explore the divine history, plan your visit, and stay updated on events.</p>
+    </div>
+    <div class="container" id="about">
+        <h2>About the Temple</h2>
+        <p>Jeenbhawani Maa Dhaam, located in the Aravalli hills of Sikar district, Rajasthan, is a revered 12th-century temple built during the reign of Prithviraj Chauhan. Dedicated to Goddess Jeenbhawani, an avatar of Goddess Durga, it is a place of miracles and devotion. The temple is known for having the longest song among Rajasthan's folk deities and has withstood historical challenges, including attempts by Aurangzeb to destroy it. Devotees believe every wish sought here is fulfilled swiftly.</p>
+    </div>
+    <!-- Visitor Information Section -->
+<section class="visitor-info-section">
+    <div class="container">
+        <h2 class="section-title">Visitor Information</h2>
+        <div class="info-cards">
+            <div class="info-card timing-card">
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Darshan Timings</h3>
+                <div class="timing-details">
+                    <p class="time-range">5:00 AM - 9:00 PM</p>
+                    <p class="daily-text">Daily</p>
+                </div>
+            </div>
+            <div class="info-card location-card">
+                <div class="card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>How to Reach</h3>
+                <p>Accessible by road, approximately 29 km from Sikar and 108-110 km from Jaipur. Nearest railway station: Sikar Junction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Visitor Information Section Styling */
+.visitor-info-section {
+    padding: 4rem 0;
+    background: var(--background-color);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Sree Krushnadevaraya', serif;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.card-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timing-details .time-range {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.timing-details .daily-text {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.location-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    <div class="container" id="location">
+        <h2>Location</h2>
+        <p><strong>Address:</strong> Jeenbhawani Maa Dhaam, Aravalli Hills, Sikar District, Rajasthan 332001, India</p>
+        <div class="location-content">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.225151674533!2d75.18306831508284!3d27.15966598299932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d2f9d5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2sJeen%20Mata%20Temple!5e0!3m2!1sen!2sin!4v1697041234567!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p>Jeenbhawani Maa Dhaam is located in a serene part of the Aravalli hills, approximately 29 km from Sikar and 108-110 km from Jaipur (see map above).</p>
+    </div>
+    <div class="container" id="events">
+        <h2>Festivals & Events</h2>
+        <p>Celebrate major festivals like Navratri and Hanuman Jayanti with special rituals and gatherings.</p>
+        <div class="festival-highlights">
+    <div class="festival-card">
+        <div class="image-container">
+            <img src="./crowd.jpg" alt="Navratri crowd at Jeen Mata Temple" class="festival-image">
+            <div class="image-overlay">
+                <h3>Devotee Gatherings</h3>
+                <p>Thousands gather during Navratri celebrations</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="festival-card">
+        <div class="image-container">
+            <img src="./mela.jpg" alt="Festival fair at Jeen Mata Temple" class="festival-image">
+            <div class="image-overlay">
+                <h3>Festival Mela</h3>
+                <p>Traditional fair with food and activities</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <p>Join us for Hanuman Jayanti celebrations with special prayers and events honoring Lord Hanuman.</p>
+    </div>
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="arch.jpg.jpg" alt="Temple Architecture View 1" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="arch.jpg (2).jpg" alt="Temple Architecture View 2" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="arch.jpg (3).jpg" alt="Temple Architecture View 3" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="g.jpg (2).jpg" alt="Temple View 2" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="g.jpg (3).jpg" alt="Temple View 3" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="g.jpg (4).jpg" alt="Temple View 4" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="g.jpg (5).jpg" alt="Temple View 5" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="g.jpg (6).jpg" alt="Temple View 6" class="gallery-image">
+            </div>
+            <div class="gallery-item video-item">
+                <video controls class="gallery-video">
+                    <source src="./videos/॥ वो प्रेम ही क्या , जो मॉं से नही हो ॥#vishal_pandit_96 #jeenmata_ji_page #trendingnow #trending #vishal_pandit_96 #jeenmata #trendingsongs #jeenmataji #trend #trendingreels #jeenmata #trendingreels #trendingreels .mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-caption">वो प्रेम ही क्या, जो मॉं से नही हो</div>
+            </div>
+            <div class="gallery-item video-item">
+                <video controls class="gallery-video">
+                    <source src="./videos/हमारी आराध्या देवी भगवती योगमाया त्रिगुणात्मिका श्रीमहाकाली महालक्ष्मी महासरस्वती स्वरूपा राज राजेश्वरी आदि शक्ति जगत जननी श्री जीण जयंती ज्वाला माँ #Jeenmaakeladle #jeenmaakeladle #maa  #adhishaktimaadurga #adhisha.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-caption">श्री जीण जयंती ज्वाला माँ</div>
+            </div>
+        </div>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
+                      inset 0 0 30px rgba(255, 69, 0, 0.4);
+            transition: transform 0.4s ease-out, box-shadow 0.4s ease;
+            border: 4px solid var(--accent-color);
+            padding: 8px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+                      inset 0 0 40px rgba(255, 69, 0, 0.6);
+            border-color: var(--primary-color);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            will-change: transform;
+        }
+
+        .video-item {
+            border-radius: 20px !important;
+            aspect-ratio: 16/9;
+        }
+
+        .gallery-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid var(--accent-color);
+        }
+
+        .video-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .video-item:hover .video-caption {
+            background: rgba(255, 69, 0, 0.8);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.15) rotate(3deg);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                padding: 1rem;
+                gap: 1.5rem;
+            }
+            .gallery-item {
+                border-width: 3px;
+                padding: 6px;
+            }
+        }
+    </div>
+    <div class="container" id="beloved-aartis">
+    <h2>Beloved Aartis</h2>
+    <div class="aarti-gallery">
+        <div class="aarti-item">
+            <img src="baarti.webp" alt="Bhairav Aarti" class="aarti-image">
+            <div class="aarti-caption">
+                <h3>Bhairav Aarti</h3>
+                <p>Sacred aarti dedicated to Lord Bhairav</p>
+            </div>
+        </div>
+
+        <div class="aarti-item">
+            <img src="gaarti.webp" alt="Ganesh Ji Aarti" class="aarti-image">
+            <div class="aarti-caption">
+                <h3>Ganesh Ji Aarti</h3>
+                <p>Divine aarti of Lord Ganesha</p>
+            </div>
+        </div>
+
+        <div class="aarti-item">
+            <img src="./221---Jeen_Mata_Aarti.gif" alt="Jeen Mata Aarti" class="aarti-image">
+            <div class="aarti-caption">
+                <h3>Jeen Mata Aarti</h3>
+                <p>Blessed aarti of Maa Jeen Mata</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Section Headings Animation */
+    .container h2, .section-title, .festival-section h2, .gallery-section h2 {
+    margin-top: 120px;
+    font-family: 'Sree Krushnadevaraya', serif;
+    font-size: 2.8rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+    /* Hover Effect for Section Headings */
+    .container h2:hover, .section-title:hover, .festival-section h2:hover, .gallery-section h2:hover {
+    transform: translateY(-5px) scale(1.02);
+    text-shadow: 4px 4px 8px rgba(255, 122, 0, 0.4);
+    background: linear-gradient(45deg, var(--deep-red), var(--orange), var(--deep-red));
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+    /* Underline Animation */
+    .container h2::after, .section-title::after, .festival-section h2::after, .gallery-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(45deg, var(--deep-red), var(--orange));
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .container h2:hover::after, .section-title:hover::after, 
+    .festival-section h2:hover::after, .gallery-section h2:hover::after {
+        width: 100%;
+    }
+
+    /* Letter Animation Styles */
+    .heading-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+    .container h2:hover .heading-letter, 
+    .section-title:hover .heading-letter, 
+    .festival-section h2:hover .heading-letter, 
+    .gallery-section h2:hover .heading-letter {
+        color: var(--orange);
+    }
+
+    .heading-letter:hover {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+    color: var(--deep-red) !important;
+    animation: letterPop 0.3s ease;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4) translateY(-12px); }
+    100% { transform: scale(1.2) translateY(-8px) rotate(5deg); }
+}
+
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header-content h1 span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Split text into individual letters for animation */
+    .header-content h1::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--cyber-blue), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(8px);
+        animation: shine 4s linear infinite;
+    }
+
+    /* Add cool animations */
+    @keyframes titleGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px var(--neon-pink))
+                   drop-shadow(0 0 20px var(--cyber-blue));
+        }
+        50% {
+            filter: drop-shadow(0 0 20px var(--electric-purple))
+                   drop-shadow(0 0 30px var(--neon-green));
+        }
+    }
+
+    @keyframes letterFloat {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Modern Subtitle Animation */
+    .header-content p {
+        font-size: 1.5rem;
+        color: var(--cyber-blue);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover Effects */
+    .header-content h1 span:hover {
+        background: linear-gradient(45deg, var(--bright-red), var(--light-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-5px) scale(1.1);
+        text-shadow: 3px 3px 6px rgba(255, 122, 0, 0.4);
+    }
+
+    @keyframes rubberBand {
+        0% { transform: scale(1); }
+        30% { transform: scaleX(1.25) scaleY(0.75); }
+        40% { transform: scaleX(0.75) scaleY(1.25); }
+        50% { transform: scaleX(1.15) scaleY(0.85); }
+        65% { transform: scaleX(0.95) scaleY(1.05); }
+        75% { transform: scaleX(1.05) scaleY(0.95); }
+        100% { transform: scale(1); }
+    }
+
+    /* Z-Pattern Layout */
+    .z-pattern-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    /* Navratri Section Styling */
+    .festival-section {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .festival-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .festival-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .festival-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255,165,0,0.3);
+    }
+
+    .image-container {
+        position: relative;
+        height: 300px;
+    }
+
+    .festival-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .festival-card:hover .festival-image {
+        transform: scale(1.05);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .image-overlay h3 {
+        margin: 0 0 0.5rem;
+        color: #ffd700;
+    }
+    
+    .highlight-card {
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-5px);
+    }
+        .aarti-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .aarti-item {
+    border-left: 4px solid #FFA500;
+    background: linear-gradient(120deg, #FFF9E6, #FFF3D6);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 153, 51, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            position: relative;
+        }
+
+        .aarti-item::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ffd700, #ff8c00, #ffd700) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .aarti-item:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .aarti-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            transition: transform 0.4s ease;
+        }
+
+        .aarti-item:hover .aarti-image {
+            transform: scale(1.05);
+        }
+
+        .aarti-caption {
+            padding: 1.5rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .aarti-caption h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.5rem;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .aarti-item:hover .aarti-caption h3 {
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        }
+
+        .aarti-caption p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .aarti-gallery {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+            }
+        }
+ gi    </style>
+to</div>
+o<div class="container" id="divine-legends">
+    <h2>Legends of the Divine Place</h2>
+    <div class="legend-content">
+        <p>This sacred site holds profound historical significance dating back to the Mahabharata era. After losing their kingdom in the infamous dice game, the Pandavas sought refuge here during their exile. The divine energy of this place provided them solace and strength during their most challenging period.</p>
+        
+        <p>Centuries later, during Aurangzeb's reign, the Mughal emperor attempted to destroy Harsh Bhairav's temple and persecute its worshippers. As priests and devotees prayed desperately to Jeen Mata for protection, the goddess manifested her divine power. She sent swarms of honeybees to attack Aurangzeb's forces, punishing them for their sacrilege. This miraculous intervention earned her the title <em>Bhawrawali Maa</em> (Goddess of Honeybees).</p>
+        
+        <p>Defeated and humbled by this divine display, Aurangzeb not only abandoned his destructive campaign but also visited Jeen Mata's temple in reverence. As an act of atonement, he donated a golden <em>chhatra</em> (a ceremonial canopy) that remains a sacred artifact in the temple to this day.</p>
+        
+        <p>These legends testify to the enduring spiritual power of this sacred site, where divine intervention has repeatedly protected the faithful throughout history.</p>
+    </div>
+
+    <style>
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Section Headings Animation */
+    .container h2, .section-title, .festival-section h2, .gallery-section h2 {
+    margin-top: 120px;
+    font-family: 'Sree Krushnadevaraya', serif;
+    font-size: 2.8rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+    /* Hover Effect for Section Headings */
+    .container h2:hover, .section-title:hover, .festival-section h2:hover, .gallery-section h2:hover {
+    transform: translateY(-5px) scale(1.02);
+    text-shadow: 4px 4px 8px rgba(255, 122, 0, 0.4);
+    background: linear-gradient(45deg, var(--deep-red), var(--orange), var(--deep-red));
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+    /* Underline Animation */
+    .container h2::after, .section-title::after, .festival-section h2::after, .gallery-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(45deg, var(--deep-red), var(--orange));
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .container h2:hover::after, .section-title:hover::after, 
+    .festival-section h2:hover::after, .gallery-section h2:hover::after {
+        width: 100%;
+    }
+
+    /* Letter Animation Styles */
+    .heading-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+    .container h2:hover .heading-letter, 
+    .section-title:hover .heading-letter, 
+    .festival-section h2:hover .heading-letter, 
+    .gallery-section h2:hover .heading-letter {
+        color: var(--orange);
+    }
+
+    .heading-letter:hover {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+    color: var(--deep-red) !important;
+    animation: letterPop 0.3s ease;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4) translateY(-12px); }
+    100% { transform: scale(1.2) translateY(-8px) rotate(5deg); }
+}
+
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header-content h1 span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Split text into individual letters for animation */
+    .header-content h1::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--cyber-blue), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(8px);
+        animation: shine 4s linear infinite;
+    }
+
+    /* Add cool animations */
+    @keyframes titleGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px var(--neon-pink))
+                   drop-shadow(0 0 20px var(--cyber-blue));
+        }
+        50% {
+            filter: drop-shadow(0 0 20px var(--electric-purple))
+                   drop-shadow(0 0 30px var(--neon-green));
+        }
+    }
+
+    @keyframes letterFloat {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Modern Subtitle Animation */
+    .header-content p {
+        font-size: 1.5rem;
+        color: var(--cyber-blue);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover Effects */
+    .header-content h1 span:hover {
+        background: linear-gradient(45deg, var(--bright-red), var(--light-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-5px) scale(1.1);
+        text-shadow: 3px 3px 6px rgba(255, 122, 0, 0.4);
+    }
+
+    @keyframes rubberBand {
+        0% { transform: scale(1); }
+        30% { transform: scaleX(1.25) scaleY(0.75); }
+        40% { transform: scaleX(0.75) scaleY(1.25); }
+        50% { transform: scaleX(1.15) scaleY(0.85); }
+        65% { transform: scaleX(0.95) scaleY(1.05); }
+        75% { transform: scaleX(1.05) scaleY(0.95); }
+        100% { transform: scale(1); }
+    }
+
+    /* Z-Pattern Layout */
+    .z-pattern-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    /* Navratri Section Styling */
+    .festival-section {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .festival-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .festival-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .festival-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255,165,0,0.3);
+    }
+
+    .image-container {
+        position: relative;
+        height: 300px;
+    }
+
+    .festival-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .festival-card:hover .festival-image {
+        transform: scale(1.05);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .image-overlay h3 {
+        margin: 0 0 0.5rem;
+        color: #ffd700;
+    }
+    
+    .highlight-card {
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-5px);
+    }
+        #divine-legends {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem auto;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        #divine-legends::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ffd700, #ff8c00, #ffd700) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .legend-content {
+            color: #fff;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .legend-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .legend-content em {
+            color: #ffd700;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .legend-content {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</div>
+
+<div class="container" id="origin-story">
+    <h2>Origin of the Devi</h2>
+    <div class="origin-content">
+        <p>According to sacred legends, approximately 1200 years ago, King Gangosingh Chauhan - a devoted worshipper of Maa Durga - received a divine promise that the Goddess would incarnate in his family lineage and be worshipped by devotees during Kaliyuga.</p>
+        
+        <p>During a visit to Lohargal, the king encountered a celestial being whose extraordinary beauty captivated him. He proposed marriage, to which she agreed under one condition: the king must always knock before entering her chambers. The king accepted this condition and they were wed, eventually bearing two children - Jeen Mata and Harsh Bhairav.</p>
+        
+        <p>One fateful day, the king forgot this sacred agreement and entered unannounced, witnessing his queen in her true divine form as a lioness. Terrified by this revelation and having broken their covenant, the celestial queen returned to the heavens, leaving behind her mortal family.</p>
+        
+        <p>After King Gangosingh's passing, the siblings grew up together under Harsh Bhairav's loving care. When Harsh eventually married, his wife grew jealous of the profound bond between brother and sister. During a traditional Rajput festival where brothers gift ornaments to their sisters, Harsh's wife manipulated events to prove she was his favorite by receiving gifts first - despite Harsh's true devotion to his sister.</p>
+        
+        <p>Heartbroken by this betrayal, Jeen Mata retreated to the mountains where her tears of kajal (eye makeup) stained the cliffs black, giving the sacred site its name - Kajal Shikhar (Mountain of Kajal). Though Harsh searched for his sister and begged her return, Jeen Mata remained devoted to her spiritual practice, ultimately attaining divine form as Jeen Bhawani while Harsh became Harsh Bhairav Dada. The jealous sister-in-law was transformed into a lizard by Jeen Mata's divine curse.</p>
+        
+        <p>This sacred origin story explains the eternal bond between Jeen Mata and Harsh Bhairav Dada, and why devotees continue to worship them with profound reverence at their holy shrines.</p>
+    </div>
+
+    <style>
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Section Headings Animation */
+    .container h2, .section-title, .festival-section h2, .gallery-section h2 {
+    margin-top: 120px;
+    font-family: 'Sree Krushnadevaraya', serif;
+    font-size: 2.8rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+    /* Hover Effect for Section Headings */
+    .container h2:hover, .section-title:hover, .festival-section h2:hover, .gallery-section h2:hover {
+    transform: translateY(-5px) scale(1.02);
+    text-shadow: 4px 4px 8px rgba(255, 122, 0, 0.4);
+    background: linear-gradient(45deg, var(--deep-red), var(--orange), var(--deep-red));
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+    /* Underline Animation */
+    .container h2::after, .section-title::after, .festival-section h2::after, .gallery-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(45deg, var(--deep-red), var(--orange));
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .container h2:hover::after, .section-title:hover::after, 
+    .festival-section h2:hover::after, .gallery-section h2:hover::after {
+        width: 100%;
+    }
+
+    /* Letter Animation Styles */
+    .heading-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+    .container h2:hover .heading-letter, 
+    .section-title:hover .heading-letter, 
+    .festival-section h2:hover .heading-letter, 
+    .gallery-section h2:hover .heading-letter {
+        color: var(--orange);
+    }
+
+    .heading-letter:hover {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+    color: var(--deep-red) !important;
+    animation: letterPop 0.3s ease;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4) translateY(-12px); }
+    100% { transform: scale(1.2) translateY(-8px) rotate(5deg); }
+}
+
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header-content h1 span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Split text into individual letters for animation */
+    .header-content h1::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--cyber-blue), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(8px);
+        animation: shine 4s linear infinite;
+    }
+
+    /* Add cool animations */
+    @keyframes titleGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px var(--neon-pink))
+                   drop-shadow(0 0 20px var(--cyber-blue));
+        }
+        50% {
+            filter: drop-shadow(0 0 20px var(--electric-purple))
+                   drop-shadow(0 0 30px var(--neon-green));
+        }
+    }
+
+    @keyframes letterFloat {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Modern Subtitle Animation */
+    .header-content p {
+        font-size: 1.5rem;
+        color: var(--cyber-blue);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover Effects */
+    .header-content h1 span:hover {
+        background: linear-gradient(45deg, var(--bright-red), var(--light-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-5px) scale(1.1);
+        text-shadow: 3px 3px 6px rgba(255, 122, 0, 0.4);
+    }
+
+    @keyframes rubberBand {
+        0% { transform: scale(1); }
+        30% { transform: scaleX(1.25) scaleY(0.75); }
+        40% { transform: scaleX(0.75) scaleY(1.25); }
+        50% { transform: scaleX(1.15) scaleY(0.85); }
+        65% { transform: scaleX(0.95) scaleY(1.05); }
+        75% { transform: scaleX(1.05) scaleY(0.95); }
+        100% { transform: scale(1); }
+    }
+
+    /* Z-Pattern Layout */
+    .z-pattern-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    /* Navratri Section Styling */
+    .festival-section {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .festival-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .festival-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .festival-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255,165,0,0.3);
+    }
+
+    .image-container {
+        position: relative;
+        height: 300px;
+    }
+
+    .festival-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .festival-card:hover .festival-image {
+        transform: scale(1.05);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .image-overlay h3 {
+        margin: 0 0 0.5rem;
+        color: #ffd700;
+    }
+    
+    .highlight-card {
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-5px);
+    }
+        #origin-story {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem auto;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        #origin-story::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ffd700, #ff8c00, #ffd700) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .origin-content {
+            color: #fff;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .origin-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .origin-content {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</div>
+
+<div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@jeenbhawanimaadhaam.org</p>
+        <p>Phone: +91-123-456-7890</p>
+    </div>
+    <footer>
+        <p>© 2025 Jeenbhawani Maa Dhaam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+    /* Updated Color Variables */
+    :root {
+    --deep-red: #FF1E1E;
+    --bright-red: #FF4D4D;
+    --orange: #FF7A00;
+    --light-orange: #FFA500;
+    --gradient-text: linear-gradient(45deg, var(--deep-red), var(--orange));
+    --saffron: #FF9933;
+    --golden: #FFD700;
+    --sacred-yellow: #FFC30B;
+}
+
+    /* Section Headings Animation */
+    .container h2, .section-title, .festival-section h2, .gallery-section h2 {
+    margin-top: 120px;
+    font-family: 'Sree Krushnadevaraya', serif;
+    font-size: 2.8rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+    /* Hover Effect for Section Headings */
+    .container h2:hover, .section-title:hover, .festival-section h2:hover, .gallery-section h2:hover {
+    transform: translateY(-5px) scale(1.02);
+    text-shadow: 4px 4px 8px rgba(255, 122, 0, 0.4);
+    background: linear-gradient(45deg, var(--deep-red), var(--orange), var(--deep-red));
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+    /* Underline Animation */
+    .container h2::after, .section-title::after, .festival-section h2::after, .gallery-section h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(45deg, var(--deep-red), var(--orange));
+        transition: width 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .container h2:hover::after, .section-title:hover::after, 
+    .festival-section h2:hover::after, .gallery-section h2:hover::after {
+        width: 100%;
+    }
+
+    /* Letter Animation Styles */
+    .heading-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+    .container h2:hover .heading-letter, 
+    .section-title:hover .heading-letter, 
+    .festival-section h2:hover .heading-letter, 
+    .gallery-section h2:hover .heading-letter {
+        color: var(--orange);
+    }
+
+    .heading-letter:hover {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+    color: var(--deep-red) !important;
+    animation: letterPop 0.3s ease;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4) translateY(-12px); }
+    100% { transform: scale(1.2) translateY(-8px) rotate(5deg); }
+}
+
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 5rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(255, 30, 30, 0.3);
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .header-content h1 span {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Split text into individual letters for animation */
+    .header-content h1::before {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--cyber-blue), transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: blur(8px);
+        animation: shine 4s linear infinite;
+    }
+
+    /* Add cool animations */
+    @keyframes titleGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 10px var(--neon-pink))
+                   drop-shadow(0 0 20px var(--cyber-blue));
+        }
+        50% {
+            filter: drop-shadow(0 0 20px var(--electric-purple))
+                   drop-shadow(0 0 30px var(--neon-green));
+        }
+    }
+
+    @keyframes letterFloat {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shine {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* Modern Subtitle Animation */
+    .header-content p {
+        font-size: 1.5rem;
+        color: var(--cyber-blue);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover Effects */
+    .header-content h1 span:hover {
+        background: linear-gradient(45deg, var(--bright-red), var(--light-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-5px) scale(1.1);
+        text-shadow: 3px 3px 6px rgba(255, 122, 0, 0.4);
+    }
+
+    @keyframes rubberBand {
+        0% { transform: scale(1); }
+        30% { transform: scaleX(1.25) scaleY(0.75); }
+        40% { transform: scaleX(0.75) scaleY(1.25); }
+        50% { transform: scaleX(1.15) scaleY(0.85); }
+        65% { transform: scaleX(0.95) scaleY(1.05); }
+        75% { transform: scaleX(1.05) scaleY(0.95); }
+        100% { transform: scale(1); }
+    }
+
+    /* Z-Pattern Layout */
+    .z-pattern-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    /* Navratri Section Styling */
+    .festival-section {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .festival-highlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .festival-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .festival-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255,165,0,0.3);
+    }
+
+    .image-container {
+        position: relative;
+        height: 300px;
+    }
+
+    .festival-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .festival-card:hover .festival-image {
+        transform: scale(1.05);
+    }
+
+    .image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.7));
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .image-overlay h3 {
+        margin: 0 0 0.5rem;
+        color: #ffd700;
+    }
+    
+    .highlight-card {
+        background: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .highlight-card:hover {
+        transform: translateY(-5px);
+    }
+    /* Add these new styles to your existing CSS */
+    .container, .section {
+    background: linear-gradient(to bottom, rgba(255, 253, 245, 0.95), rgba(255, 248, 225, 0.95));
+    border: 2px solid #FFA500;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .container:hover, .section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(255, 153, 51, 0.2);
+    }
+
+    .container:target {
+        opacity: 1;
+        transform: scale(1.02);
+        background: rgba(255, 255, 255, 0.2);
+        border: 3px solid var(--primary-color);
+        box-shadow: 0 0 30px rgba(255, 69, 0, 0.3);
+    }
+
+    .container h2 {
+        color: var(--primary-color);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-family: 'Sree Krushnadevaraya', serif;
+    }
+
+    .nearby-place {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .nearby-place:hover {
+        transform: translateY(-5px);
+    }
+
+    .nearby-place img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid var(--accent-color);
+    }
+
+    .nearby-place-content {
+        padding: 1rem;
+    }
+
+    .nearby-place h3 {
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-family: 'Sree Krushnadevaraya', serif;
+    }
+
+    @media (max-width: 768px) {
+        .nearby-place {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</div>
+<div class="container" id="nearby-places">
+    <h2>Other Locations to Visit</h2>
+    
+    <div class="nearby-place">
+        <img src="./bhairavdada.jpg" alt="Harsh Bhairav Dada Temple" class="place-image">
+        <div class="nearby-place-content">
+            <h3>Harsh Bhairav Dada Temple</h3>
+            <p>Located in the Sikar district, Harshnath Temple is an ancient Hindu temple dedicated to Lord Shiva, situated atop Harsh Parvat in the Aravalli Hills <mcreference link="https://en.wikipedia.org/wiki/Harshnath_Temple" index="1">1</mcreference>. Built during the 10th century, this historical temple offers breathtaking views and a serene atmosphere for spiritual seekers <mcreference link="https://www.rajasthantourplanner.com/blog/harshnath-bhairav-mandir/" index="2">2</mcreference>.</p>
+            <p>Distance: 14 km from Sikar city center <mcreference link="https://thetempleguru.com/listing/harshnath-temple-sikar/" index="3">3</mcreference></p>
+        </div>
+    </div>
+
+    <div class="nearby-place">
+        <img src="./g.jpg.jpg" alt="Jeen Mata Dharmshala">
+        <div class="nearby-place-content">
+            <h3>Jeen Mata Dharmshala</h3>
+            <p>A comfortable and affordable accommodation facility for pilgrims visiting the temple. The dharmshala provides clean rooms, modern amenities, and a peaceful environment for devotees to stay during their spiritual journey.</p>
+            <p><strong>Facilities:</strong> AC/Non-AC rooms, dining hall, parking, 24-hour water supply</p>
+            <p><strong>Contact:</strong> +91 96606 28691</p>
+        </div>
+    </div>
+
+    <div class="nearby-place">
+        <img src="./h.webp" alt="Bunty Di Hatti Restaurant" class="place-image">
+        <div class="nearby-place-content">
+            <h3>Bunty Di Hatti</h3>
+            <p>A popular local restaurant known for its delicious North Indian and Punjabi cuisine <mcreference link="https://www.justdial.com/Sikar/Bunty-Di-Hatti-Near-Jeen-Mata-Temple-Sikar-HO/9999P1572.1572.190523190148.G9F4_BZDET" index="1">1</mcreference>. Located on the Jaipur-Bikaner bypass, this bustling eatery offers quality food at reasonable prices <mcreference link="https://www.tripadvisor.in/Restaurant_Review-g1584782-d13324614-Reviews-Bunty_Di_Hatti-Sikar_Sikar_District_Rajasthan.html" index="2">2</mcreference>.</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div
